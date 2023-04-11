@@ -24,6 +24,7 @@ contract L1Contract {
       if (!success) {
         revert('metadata execution failed');
       }
+      caller = address(0);
     }
 
     function setGreeting(string memory _greeting) public {
